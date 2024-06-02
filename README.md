@@ -6,7 +6,7 @@ This image was synthesized via Gaussian splatting
 Compared to CDEP, Gaussian splatting can produce superior visual fidelity with fewer artifacts at a similar performance level. However, the approach’s drawback is the large amount of data required for a good result, the time it takes to optimize the Gaussians, and the increased amount of artifacting that occurs when moving far away from the initial capture positions.
 
 ## Creating Gaussian Splats
-I attempted to get the [original paper source](https://github.com/graphdeco-inria/gaussian-splatting) without much success. Then I discovered an application called Postshot by Jawset. It encapsulates the functionality of training a Gaussian splat into a user-friendly interface. From this, I was able to start training Gaussian splats.
+I attempted to get the [original paper source](https://github.com/graphdeco-inria/gaussian-splatting) running without much success. Then I discovered an application called Postshot by Jawset. It encapsulates the functionality of training a Gaussian splat into a user-friendly interface. From this, I was able to start training Gaussian splats.
 
 My system, which includes an RTX3060, a Ryzen5800x, and 32GB of RAM, managed to train/optimize a scene in 45 minutes. This was the quickest I was able to get a result and it wasn't great. There was a lot of artifacting and blurriness.To achieve anything that looked decent, it took around 1.5 to 2 hours. To make matters worse, training often fails halfway through, requiring me to restart and capture new/more camera angles. This makes creating splats a long and time-consuming process.
 
